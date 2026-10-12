@@ -19,17 +19,16 @@
 body{
     background-color: rgb(255, 255, 255);
     font-family:Arial, Helvetica, sans-serif;
-    height: 97vh;
+    height: 90vh;
 }
 main{
-    height: 90vh;
+    height: 87vh;
     margin: auto;
     margin-top: 1em;
     width: 95vw;
 }
 
 article{
-    height: 100px;
     transition: .9s;
     width: 100%;
 }
@@ -38,13 +37,13 @@ article#imagem{
     background: var(--cor_fundo1) url("../imagens/fundo01.png") no-repeat center center;
     background-size: 100px;
     border-radius: 10px  10px 0 0 ;
-    height: 20vh;
+    height: 27vh;
 }
 
 article#principal{
     background-color: var(--cor_fundo2);
     border-radius: 0 0 10px 10px;
-    height: 70vh;
+    height: 60vh;
 }
 
 article#principal h1{
