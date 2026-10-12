@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*              Tablet                          */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        margin-top: 2em;
+        width: 60vw;
+    }
+
+    article{
+        display: block;
+        transition: .9s;
+    }
+
+    article#imagem{
+        border-radius: 10px 0 0 10px;
+        float: left;
+        height: 450px;
+        width: 30%;
+    }
+
+    article#principal{
+        border-radius: 0 10px 10px 0;
+        float: right;
+        height: 450px;
+        width: 70%;
+    }
+    h1{
+        margin-top: 1em;
+        margin-bottom: 1.1em;
+    }
+}
+
+/*         PC e Outros             */
+@media screen and (min-width: 1024px) {
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 60vw;
+    }
+
+    article{
+        transition: .9s;
+    }
+
+    article#imagem{
+        background: url("../imagens/fundo03.png") no-repeat center center ;
+        border-radius: 0 10px 10px 0;
+        float: right;
+        height: 450px;
+        width: 50%;
+    }
+
+    article#principal{
+        border-radius: 10px 0 0 10px;
+        float: left;
+        height: 450px;
+        width: 50%;
+    }
+
+    h1{
+        margin-top: 1.2em ;
+        margin-bottom: 1.2em;
+    }
+}

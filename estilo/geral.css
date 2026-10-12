@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --cor_fundo1: #0A1220;
+    --cor_fundo2: #102A44;
+    --cor_primária: #2F80ED;
+    --cor_destaque: #56CCF2;
+    --cor_texto1: #FFFFFF;
+    --cor_texto2: #D1D2DB;
+    --cor_texto3: #9CA3AF;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    height: 97vh;
+}
+main{
+    margin: auto;
+    margin-top: 1em;
+    width: 80vw;
+}
+
+article{
+    height: 100px;
+    transition: .9s;
+    width: 100%;
+}
+
+article#imagem{
+    background: var(--cor_fundo1) url("../imagens/fundo01.png") no-repeat center center;
+    background-size: 100px;
+    border-radius: 10px  10px 0 0 ;
+    height: 150px;
+}
+
+article#principal{
+    background-color: var(--cor_fundo2);
+    border-radius: 0 0 10px 10px;
+    height: 400px;
+}
+
+article#principal h1{
+    color: white;
+    padding: 40px 5px 5px 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--cor_destaque);
+}
+
+article#principal p{
+    color: var(--cor_texto2);
+    padding: 2px;
+    text-align: center;
+}
+
+article#principal div.campo{
+    margin: auto;
+    margin-top: 2em;
+    width: 80%;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+article#principal > form > div.campo > label{
+    color: var(--cor_texto2);
+    display: block;
+    user-select: none;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+article#principal > form > div.campo > input{    
+    background-color: var(--cor_fundo2);
+    border: none;
+    border-bottom: 1px solid var(--cor_destaque);
+    color: var(--cor_texto2);
+    display: block;
+    height: 2em;
+    margin: auto;
+    outline: none;
+    width: 100%;
+}
+
+article#principal > form > div.campo > label:has(+ input:focus),
+article#principal > form > div.campo > label:has(+ input:not(:placeholder-shown)){
+    position: absolute;
+    top:-1.5em;
+    color: var(--cor_texto3);
+    font-size: .8em;
+    transition: .3s;
+}
+
+article#principal > form > div#campo2{
+    margin: auto;
+    margin-top: .4em;
+    text-align: right;
+    width: 80%;
+}
+
+article#principal > form > div#campo2 > label{
+    color:var(--cor_texto2);
+    display: inline-block;
+    font-size: .8em;
+    text-align: right;
+}
+
+article#principal > form > div#campo2 > input{
+    display: inline-block;
+}
+
+article#principal button{
+    background-color: var(--cor_destaque);
+    border-color: var(--cor_destaque);
+    border-radius: 9px;
+    color: var(--cor_primária);
+    display: block;
+    font-size: 1em;
+    font-weight: bolder;
+    height: 2.5em;
+    margin: auto;
+    margin-top: 3em;
+    user-select: none;
+    width: 80%;
+}
