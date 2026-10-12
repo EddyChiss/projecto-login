@@ -22,10 +22,10 @@ body{
     height: 97vh;
 }
 main{
-    height: 95vh;
+    height: 90vh;
     margin: auto;
     margin-top: 1em;
-    width: 98vw;
+    width: 95vw;
 }
 
 article{
@@ -38,7 +38,7 @@ article#imagem{
     background: var(--cor_fundo1) url("../imagens/fundo01.png") no-repeat center center;
     background-size: 100px;
     border-radius: 10px  10px 0 0 ;
-    height: 27vh;
+    height: 20vh;
 }
 
 article#principal{
