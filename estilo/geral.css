@@ -56,8 +56,11 @@ article#principal h1{
 
 article#principal p{
     color: var(--cor_texto2);
+    margin-top: 1.2em;
+    margin-bottom: 3.5em; 
     padding: 2px;
     text-align: center;
+    
 }
 
 article#principal div.campo{
